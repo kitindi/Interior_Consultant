@@ -13,7 +13,11 @@ body {
 .container{
   max-width: 1200px;
   margin: 0 auto;
-  padding: 25px;
+  padding: 1em 0;
+}
+.warpper{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 /* header */
 
@@ -42,10 +46,10 @@ header .container .navigation .navbar li{
   cursor: pointer;
   padding:.5em 1em;
 }
-.active{
+/* .active{
   background: #F45331;
   color: #fff;
-}
+} */
 header .container .navigation .navbar li:hover{
   background: #F45331;
   color: #fff;
@@ -53,16 +57,74 @@ header .container .navigation .navbar li:hover{
 
 main .container{
   display: flex;
+  padding: 40px 0;
 }
 main .container .intro--text{
   flex: 1;
-  padding:40px 0;
+  padding:20px 0;
 }
 
  main .container .intro--image{
+   position: relative;
   flex: 2;
-  padding: 40px 10px;
+  text-align:right;
+  padding: 20px;
 }
 main .container .intro-image__banner{
-  width: 100%;
+  width: 90%;
+  height:400px;
 }
+main .container .intro--text .intro--text__headline{
+  font-size: 30px;
+  font-weight: 500;
+  padding-bottom: 1em;
+}
+main .container .intro--text .intro--text__description{
+  width: 250px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+main .container .intro--text__link{
+  color: #fff;
+  margin-top: 2em;
+}
+main .intro--image .profile{
+  display: flex;
+ text-align: left;
+  padding: 5px;
+  width: 300px;
+  background: #181719;
+  position: absolute;
+  bottom: -30px;
+  right: 60px;
+  }
+  main .intro--image .profile .profile-image{
+    width: 60px;
+    height: 60px;
+    border-radius:50px;
+  }
+ figure{
+   padding: .5em;
+ }
+  figure div{
+    display: flex;
+    align-items: center;
+    padding: .5em;
+  }
+  figure div p{
+    margin-left: .5em;
+    font-size: 16px;
+    align-self: flex-start;
+  }
+
+  figure .caption{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 .5em;
+    margin-left: 40px;
+  }
+
+  .profile .small{
+    font-size: 12px;
+  }
