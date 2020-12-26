@@ -1,0 +1,68 @@
+body {
+  font-family: 'Courier Prime', monospace;
+    background: #181719;
+    color: #FFFFFF;
+  }
+  a{
+    display: inline-block;
+    text-decoration: none;
+  }
+.fas{
+  color: #FFFFFF;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+}
+/* header */
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .navigation{
+  display: flex;
+}
+header .container .logo{
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding:.2em;
+  border: 1px solid #fff;
+}
+header .container .navigation .toggle{
+  display: none;
+}
+header .container .navigation .navbar li{
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+  padding:.5em 1em;
+}
+.active{
+  background: #F45331;
+  color: #fff;
+}
+header .container .navigation .navbar li:hover{
+  background: #F45331;
+  color: #fff;
+}
+
+main .container{
+  display: flex;
+}
+main .container .intro--text{
+  flex: 1;
+  padding:40px 0;
+}
+
+ main .container .intro--image{
+  flex: 2;
+  padding: 40px 10px;
+}
+main .container .intro-image__banner{
+  width: 100%;
+}
