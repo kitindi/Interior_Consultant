@@ -11,6 +11,7 @@ body {
   color: #FFFFFF;
 }
 .container{
+  width: 80%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1em 0;
@@ -30,7 +31,7 @@ header .container .navigation{
   display: flex;
 }
 header .container .logo{
-  font-size: 32px;
+  font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
   padding:.2em;
@@ -41,23 +42,23 @@ header .container .navigation .toggle{
 }
 header .container .navigation .navbar li{
   display: inline-block;
-  font-size: 18px;
+  font-size: 1rem;
   margin-right: 10px;
   cursor: pointer;
-  padding:.5em 1em;
+  padding:.5em;
 }
 /* .active{
   background: #F45331;
   color: #fff;
 } */
 header .container .navigation .navbar li:hover{
-  background: #F45331;
+  border-bottom: 2px solid #f45331;
   color: #fff;
 }
 
 main .container{
   display: flex;
-  padding: 40px 0;
+  padding: 2em 0;
 }
 main .container .intro--text{
   flex: 1;
